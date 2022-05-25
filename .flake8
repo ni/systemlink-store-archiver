@@ -1,0 +1,11 @@
+# TODO: Merge this into pyproject.toml when it is supported
+#       https://gitlab.com/pycqa/flake8/issues/428
+[flake8]
+max-line-length = 100
+# H301: One import per line
+# W503: Line break occurred before a binary operator
+# E203: Whitespace before ':'
+ignore = H301,W503,E203
+exclude = .venv,docs
+application-import-names = systemlink-store-archiver
+import-order-style = smarkets
